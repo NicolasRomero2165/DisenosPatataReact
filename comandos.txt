@@ -1,0 +1,3 @@
+npm create vite@latest (crear proyecto)
+npm install (instala dependencias)
+npm run dev (correr la página)
