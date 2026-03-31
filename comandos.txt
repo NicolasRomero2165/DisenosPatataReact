@@ -1,3 +1,68 @@
 npm create vite@latest (crear proyecto)
 npm install (instala dependencias)
 npm run dev (correr la página)
+
+Párametro : cargo los datos a la función
+Argumento : el resultado de la función
+
+Destructuring (usuario.nombre): se utiliza para pasar información entre componentes al sacar información específica de un objeto. 
+EJ: const usuario = {nombre: "Pepe", edad: 25}
+const { nombre, edad } = usuario;
+
+Spread Operator (...): creamos copias. Tomamos datos de objetos / arrays y ponerlos dentro de otro.
+EJ: const frutasRojas = ["frutilla", "cereza"];
+const frutasAmarillas = ["banana", "mango"];
+const todasLasFrutas = [...frutasRojas, ...frutasAmarillas];
+EJ: const datosPersonales = { nombre: "Carlos", edad: 35 }
+const datosCompletos = { ...datosPersonales, edad: 36 }; -- se pisa la edad anterior --
+
+.map(): recorre un array, aplica una función a cada elemento y devuelve un nuevo array con los resultados. No modifica el original. Es la herramienta #1 en React para renderizar listas.
+EJ: const numeros = [1, 2, 3, 4];
+const duplicados = numeros.map((num) => num * 2); -- Resultado: [2, 4, 6, 8]
+EJ en React (Crear una lista de elementos): const nombres = ['Matias', 'Sabrina', 'Luis'];
+<ul>
+   {nombres.map( (nombre, index) => (
+      <li key={index}>{nombre}</li>
+   ))}
+</ul> -- En React, cada elemento de la lista necesita una key única para que funcione de manera eficiente.
+
+Props: son la forma de enviar datos en React. El flujo es siempre de padre -> hijo, son como los parámetros de tus componentes.
+- El Ojbeto props
+Cómo funciona: se recibe un objeto con toda la información (props).
+Uso: props.dato
+Ideal para: entender el concepto básico.
+- Destructuring
+Cómo funciona: "desarmas" el objeto y tomas solo lo que necesitas.
+Resultado: código más limpio y directo.
+La forma más recomendada.
+- Spread Operator:
+Cómo funciona: "Esparce" un objeto entero como props individuales.
+Perfecto para: cuando los datos vienen de una API.
+
+Prop Mágica: children
+Todo lo que pones entre las etiquetas de apertura y cierre de un componente. Sirve para crear componentes envoltorios como: contenedores, cards, layouts.
+Sus ventajas son la 
+- Reutilización: permite crear componentes genéricos adaptables a diferentes contextos.
+- Modularidad: facilita la creación de interfaces complejas a partir de piezas simples.
+- Mantenibilidad: mejora el uso y mantenibilidad fácilmente.
+
+¿Por qué separar?
+A medida que tu aplicación crece, necesitas orden. La mejor práctica es separar la lógica de la apariencia. Piensa en ello como separar los "cerebros" de la "cara bonita".
+- Smart: Encargados de la lógica
+Características clave:
+* Manejan la lógica y el estado.
+* Buscan y preparan los datos (ej: API).
+* Le dicen qué hacer a los componentes.
+- Dumb: ¿Cómo se ven las cosas?
+Características clave:
+* Reciben datos solo por props.
+* No tienen lógica de negocio.
+* Son súper reutilizables.
+
+Exportaciones
+- Exportación por defecto: solo puede haber uno por archivo. Es el "protagonista".
+Ej: import MiComponente from "./Archivo";
+Se importa sin llaves y puedes cambiarle el nombre al importar.
+- Exportación nombrada: puedes tener varios por archivo. Son el "equipo de apoyo".
+Ej: import { CompA, CompB } from "./Archivo";
+Se importa con llaves y el nombre debe coincidir exactamente.

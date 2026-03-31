@@ -4,12 +4,14 @@ import viteLogo from './assets/vite.svg'
 import heroImg from './assets/hero.png'
 import { Encabezado } from './components/Encabezado'
 import { CuerpoPosteo } from './components/CuerpoPosteo'
+import { Navegador } from './components/Navegador'
 import { PieDePosteo } from './components/PieDePosteo'
 
 function App() {
   return (
   <>
     <Encabezado/>
+    <Navegador/>
     <CuerpoPosteo/>
     <PieDePosteo/>
   </> );
