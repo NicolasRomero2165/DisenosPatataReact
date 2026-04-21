@@ -1,9 +1,8 @@
 import { Encabezado } from './components/Encabezado/Encabezado'
 import { CuerpoPosteo } from './components/CuerpoPosteo'
 import { Navegador } from './components/Navegador/Navegador'
-import { PieDePosteo } from './components/PieDePosteo'
+import { PieDePosteo } from './components/Footer/PieDePosteo'
 import { Asistente } from './components/Asistente'
-import { TarjetaProducto } from './components/Producto/tarjetaProducto'
 
 function App() {
 
@@ -12,12 +11,11 @@ function App() {
   return (
   <>
     <Encabezado/>
-    <Navegador/>
     <CuerpoPosteo/>
     <Asistente>
       {asistentes.map(({ nombre, tarea, emoji }, index) => (
         <li key={index}>
-          <h4>{nombre}</h4> - <p>{tarea}, {emoji} </p>
+          <h4>{nombre}</h4> <p>{tarea} {emoji} </p>
         </li>
       ))}
     </Asistente>

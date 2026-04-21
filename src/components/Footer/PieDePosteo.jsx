@@ -1,3 +1,5 @@
+import './PieDePosteo.css'
+
 export const PieDePosteo = () => { 
     return (
     <div>

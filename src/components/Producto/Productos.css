@@ -7,13 +7,17 @@
     color: white;
 }
 
+#cuerpo p {
+    margin-top: 10px;
+}
+
 #cuerpo {
     width: 100%;
 }
 
 #cuerpo img {
     width: 100%;
-    height: 200px;
+    height: 240px;
 }
 
 .precio{

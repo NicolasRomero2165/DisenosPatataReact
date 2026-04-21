@@ -1,8 +1,8 @@
 
-nav{
+#encabezado{
     background: #3F5EFB;
     background-image: url('./estrelladoLila.jpg');
-    background-size: cover;
+    background-size: auto;
 }
 
 nav ul {
