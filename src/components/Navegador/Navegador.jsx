@@ -1,5 +1,6 @@
+import './Navegador.css'
 export const Navegador = () => {
-    const navegador = ["Inicio", "Tazas", "Remeras", "Calendarios", "Set de Jardín"];
+    const navegador = ["Inicio", "Productos", "Contacto", "Carrito"];
 
     return (
         <nav>

@@ -1,0 +1,22 @@
+.tarjeta{
+    display: grid;
+    width: 30%;
+    float: left;
+    margin: 18px;
+    background-color: blueviolet;
+    color: white;
+}
+
+#cuerpo {
+    width: 100%;
+}
+
+#cuerpo img {
+    width: 100%;
+    height: 200px;
+}
+
+.precio{
+    font-weight: bold;
+    background-color: rgb(67, 20, 110);
+}

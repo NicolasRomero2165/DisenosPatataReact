@@ -1,3 +1,4 @@
+import './Encabezado.css'
 export const Encabezado = () => { 
     return (
     <div>

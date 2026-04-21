@@ -110,16 +110,6 @@ code {
   background: var(--code-bg);
 }
 
-ul {
-  list-style: none;
-  margin: 10px;
-}
-
-li {
-  display: inline-block;
-  margin: 10px;
-}
-
 footer {
   margin: 15px;
 }
