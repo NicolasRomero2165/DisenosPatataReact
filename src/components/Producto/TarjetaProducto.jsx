@@ -10,7 +10,10 @@ export const TarjetaProducto = () => {
     return (
         Productos.map(({ nombre, descripcion, precio, imagen }, index) => (
             <div key={index} className="tarjeta">
-                <h4>{nombre}</h4><img src={imagen} alt="" /><p>{descripcion}</p> <p className='precio'> Precio: <br />{precio} </p>
+                <h3>{nombre}</h3>
+                <img src={imagen} alt="" />
+                <p>{descripcion}</p> 
+                <p className='precio'> Precio: <br />{precio} </p>
             </div>
         ))
     )
