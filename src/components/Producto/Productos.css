@@ -8,6 +8,15 @@
     border: solid white 2px;
 }
 
+.favorito {
+    margin-bottom: 5px;
+}
+
+.favorito:hover {
+    background-color: blueviolet;
+    cursor: pointer;
+}
+
 .tarjeta h3 {
     text-shadow: 1px  0px 0px black,
                  0px  1px 0px black,
