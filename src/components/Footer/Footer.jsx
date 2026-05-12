@@ -1,6 +1,6 @@
-import './PieDePosteo.css'
+import './Footer.css'
 
-export const PieDePosteo = () => { 
+export const Footer = () => { 
     return (
     <div>
         <footer>
