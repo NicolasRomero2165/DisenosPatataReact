@@ -66,3 +66,63 @@ Se importa sin llaves y puedes cambiarle el nombre al importar.
 - Exportación nombrada: puedes tener varios por archivo. Son el "equipo de apoyo".
 Ej: import { CompA, CompB } from "./Archivo";
 Se importa con llaves y el nombre debe coincidir exactamente.
+
+FAVORITO
+const productosIniciales = [
+    {
+        nombre: 'Taza mágica',
+        descripcion: 'Taza que cambia su dibujo con la temperatura del agua.',
+        precio: '$ 16.000',
+        imagen: 'src/components/Producto/imagenes/tazas.jpg',
+        favorito: false
+    },
+    {
+        nombre: 'Calendario perpetuo',
+        descripcion: 'Calendario eterno imantado, perfecto para la heladera. Incluye un fibrón.',
+        precio: '$ 15.000',
+        imagen: 'src/components/Producto/imagenes/calendario.jpg',
+        favorito: false
+    },
+    {
+        nombre: 'Stickers',
+        descripcion: 'Stickers de todo tipo: común, aprueba de agua, vinilo y demás.',
+        precio: '1 x $ 1.000, 3 x $ 2.500, 10 x $ 8.000',
+        imagen: 'src/components/Producto/imagenes/stickers.jpg',
+        favorito: false
+    }
+];
+
+export const TarjetaProducto = () => {
+    const [productos, setProductos] = useState(productosIniciales);
+
+    const marcarComoFavorito = (index) => {
+        setProductos(prevProductos =>
+        prevProductos.map((producto, i) =>
+            i === index 
+            ? { ...producto, favorito: !producto.favorito } 
+            : producto
+        )
+    );
+    };
+
+    return (
+    <div>
+        {productos.map((producto, index) => (
+        <div key={index} className="tarjeta">
+            <h3>{producto.nombre}</h3>
+            <img src={producto.imagen} alt={producto.nombre} />
+            <p>{producto.descripcion}</p>
+            <p className="precio">{producto.precio}
+            <br />
+            <button 
+            className="favorito" 
+            onClick={() => marcarComoFavorito(index)}
+            >
+            {producto.favorito ? '❤️ Quitar' : '🤍 Agregar'}
+            </button>
+            </p>
+        </div>
+        ))}
+    </div>
+    );
+};
