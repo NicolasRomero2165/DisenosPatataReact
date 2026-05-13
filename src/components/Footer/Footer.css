@@ -1,4 +1,16 @@
 footer {
-    background-color: purple;
-    color: white;
+    background: #94298f;
+    background: linear-gradient(90deg,rgba(148, 41, 143, 1) 0%, rgba(212, 92, 206, 1) 25%, rgba(250, 127, 244, 1) 50%, rgba(212, 92, 206, 1) 75%, rgba(148, 41, 143, 1) 100%);
+}
+
+footer p {
+    font-size: 12px;
+    font-weight: bold;
+    color: black;
+}
+
+footer img {
+    height: 48px;
+    margin-right: 5px;
+    margin-left: 5px;
 }

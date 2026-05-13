@@ -7,7 +7,7 @@ export const Nav = () => {
     return (
         <nav>
             <div>
-                <h3>Diseños personales, simples y a un excelente precio.<br/>Desde tarjetas, remeras, stickers, tazas y demás.<br/>3 de Enero del 2026</h3>
+                <h3>Diseños personales, simples y a un excelente precio.<br/>Desde tarjetas, remeras, stickers, tazas y demás.</h3>
             </div>
             <ul>
                 {nav.map( (nombre, index) => 

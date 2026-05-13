@@ -1,20 +1,23 @@
 [
     {
+      "id": 1,
       "nombre": "Taza mágica",
       "descripcion": "Taza que cambia su dibujo con la temperatura del agua.",
-      "precio": "$ 16.000",
+      "precio": 16000,
       "imagen": "src/components/Producto/imagenes/tazas.jpg"
     },
     {
+      "id": 2,
       "nombre": "Calendario perpetuo",
       "descripcion": "Calendario eterno imantado, perfecto para la heladera. Incluye un fibrón.",
-      "precio": "$ 15.000",
+      "precio": 15000,
       "imagen": "src/components/Producto/imagenes/calendario.jpg"
     },
     {
+      "id": 3,
       "nombre": "Stickers",
       "descripcion": "Stickers de todo tipo: común, aprueba de agua, vinilo y demás.",
-      "precio": "1 x $ 1.000, 3 x $ 2.500, 10 x $ 8.000",
+      "precio": 1000,
       "imagen": "src/components/Producto/imagenes/stickers.jpg"
     }
   ]
