@@ -4,20 +4,83 @@
       "nombre": "Taza mágica",
       "descripcion": "Taza que cambia su dibujo con la temperatura del agua.",
       "precio": 16000,
-      "imagen": "src/components/Producto/imagenes/tazas.jpg"
+      "imagen": "../img/productos/tazas.jpg"
     },
     {
       "id": 2,
       "nombre": "Calendario perpetuo",
       "descripcion": "Calendario eterno imantado, perfecto para la heladera. Incluye un fibrón.",
       "precio": 15000,
-      "imagen": "src/components/Producto/imagenes/calendario.jpg"
+      "imagen": "../img/productos/calendario.jpg"
     },
     {
       "id": 3,
       "nombre": "Stickers",
       "descripcion": "Stickers de todo tipo: común, aprueba de agua, vinilo y demás.",
       "precio": 1000,
-      "imagen": "src/components/Producto/imagenes/stickers.jpg"
+      "imagen": "../img/productos/stickers.jpg"
+    },
+    {
+      "id": 4,
+      "nombre": "Tira con nombre",
+      "descripcion": "Una tela con el nombre que quieras perfecta para conser en tu indumentaria y evitar que se mezcle con otras.",
+      "precio": 7000,
+      "imagen": "../img/productos/tiraNombre.jpg"
+    },
+    {
+      "id": 5,
+      "nombre": "Set de Jardín",
+      "descripcion": "Un set de jardín personalizable con los personajes que a tu chico más le gusta. Incluye 7 items.",
+      "precio": 30000,
+      "imagen": "../img/productos/setJardin.jpg"
+    },
+    {
+      "id": 6,
+      "nombre": "Almohadon 20x20",
+      "descripcion": "Una almohada personalizable, perfecto para regalar. Vienen de diferentes tamaños: 20x20, 20x30, 30x30, 30x40, 40x40 y 40x60 cm.",
+      "precio": 11000,
+      "imagen": "../img/productos/almohadon.jpg"
+    },
+    {
+      "id": 7,
+      "nombre": "Etiquetas Escolares",
+      "descripcion": "Etiquetas para los útiles, cuadernos y demás para tus chicos. Completamente personalizable con el nombre y el personaje que ellos quieran.",
+      "precio": 5000,
+      "imagen": "../img/productos/etiquetasEscolares.jpg"
+    },
+    {
+      "id": 8,
+      "nombre": "Polaroid 10x10",
+      "descripcion": "Recreamos tus recuerdos más bellos en pequeñas y hermosas fotos polaroid 10x10, con el marco y diseño que vos quieras.",
+      "precio": 1000,
+      "imagen": "../img/productos/polaroid.jpg"
+    },
+    {
+      "id": 9,
+      "nombre": "Remera",
+      "descripcion": "Pídenos la remera con el diseño que quieras y puede ser con doble estampado. Únicamente la remera de color blanco o gris.",
+      "precio": 20000,
+      "imagen": "../img/productos/remera.jpg"
+    },
+    {
+      "id": 10,
+      "nombre": "30 Tarjetas",
+      "descripcion": "Tarjetas personalizadas perfecto para tus negocios, incluímos tu número de contacto, página o hasta el QR. Todo como vos prefieras.",
+      "precio": 5000,
+      "imagen": "../img/productos/tarjetas.jpg"
+    },
+    {
+      "id": 11,
+      "nombre": "Decoraciones para Cumple",
+      "descripcion": "Te decoramos y armamos bolsitas con caramelos para 20 chicos. Incluye el banderín y adornos para la torta, obviamente con el diseño que a vos más te guste.",
+      "precio": 20000,
+      "imagen": "../img/productos/decoracionCumple.jpg"
+    },
+    {
+      "id": 12,
+      "nombre": "Bolsa de tela",
+      "descripcion": "Ve a comprar o lleva todas tus cosas con tu bolsa de tela favorita, solo danos tu idea que nosotros lo hacemos realidad.",
+      "precio": 7000,
+      "imagen": "../img/productos/bolsaTela.jpg"
     }
   ]

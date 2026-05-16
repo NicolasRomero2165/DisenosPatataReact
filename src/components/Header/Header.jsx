@@ -3,11 +3,9 @@ import '../Header/Header.css'
 
 export const Header = () => { 
     return (
-    <div id="encabezado">
-    <header>
+    <header id="encabezado">
         <h1>Diseños Patata</h1>
         <Nav />
     </header>
-    </div>
     );
 };

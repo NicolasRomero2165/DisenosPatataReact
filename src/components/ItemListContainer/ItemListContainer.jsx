@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
+import { ItemList } from '../ItemList/ItemList';
+import '../ItemListContainer/ItemListContainer.css'
 
-export const Productos = ({Mensaje}) => {
+export const ItemListContainer = () => {
 
 const [productos, setProductos] = useState([]);
 const [error, setError] = useState(null);
@@ -10,7 +12,7 @@ useEffect(() => {
     fetch('/data/productos.json')
     .then((respuesta) => {
     if (!respuesta.ok) {
-        throw new Error('No se pudo cargar la información de los productos');
+        throw new Error('No se pudo cargar los productos.');
     }
         return respuesta.json();
     })
@@ -27,6 +29,7 @@ useEffect(() => {
 
 if (cargando) {
 return <p>Cargando productos, por favor espere...</p>;
+console.log('')
 }
 
 if (error) {
@@ -35,17 +38,10 @@ return <p>Error: {error}</p>;
 
 return (
     <div>
-            <h1>{Mensaje}</h1>
-        <ul>
-            {productos.map((producto) => (
-            <li key={producto.id}>
-                <h2>{producto.nombre}</h2>
-                <img src={producto.imagen} alt={producto.nombre} width="150" />
-                <p>{producto.descripcion}</p>
-                <p>Precio: ${producto.precio}</p>
-            </li>
-        ))}
-        </ul>
+        <h2>PRODUCTOS</h2>
+        <div  id='productos'>
+            <ItemList productos={productos}/>
+        </div>
     </div>
 );
 }

@@ -1,8 +1,8 @@
 import { Routes } from 'react-router-dom';
 import { Route } from 'react-router-dom'
+import { ItemListContainer } from './components/ItemListContainer/ItemListContainer';
+import { Home } from './components/Home/Home';
 import { Layout } from './components/Layout/Layout';
-import { CuerpoPosteo } from './components/CuerpoPosteo';
-import { Productos } from './components/Productos/Productos';
 
 function App() {
   
@@ -10,8 +10,9 @@ function App() {
   <>
     <Layout>
       <Routes>
-        <Route path='/Inicio' element={< CuerpoPosteo />}> </Route>
-        <Route path='/Productos' element={< Productos />}> </Route>
+        <Route path='/' element={<Home />}> </Route>
+        <Route path='/Inicio' element={<Home />}> </Route>
+        <Route path='/Productos' element={< ItemListContainer />}> </Route>
         <Route path='/Contacto' element={<h2>CONTACTO</h2>}> </Route>
         <Route path='/Carrito' element={<h2>CARRITO</h2>}> </Route>
       </Routes>

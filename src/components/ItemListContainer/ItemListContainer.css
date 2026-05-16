@@ -1,0 +1,58 @@
+.tarjetas{
+    display: grid;
+    width: 30%;
+    float: left;
+    margin: 16px;
+    background-color: blueviolet;
+    color: white;
+    border: solid white 2px;
+}
+
+.tarjetas h3 {
+    text-shadow: 1px  0px 0px black,
+                 0px  1px 0px black,
+                 -1px  0px 0px black,
+                 0px -1px 0px black;
+}
+
+.tarjetas p{
+    font-weight: bold;
+    background-color: rgb(67, 20, 110);
+    font-size: 24px;
+    padding: 10px;
+}
+
+.tarjetas img {
+    width: 100%;
+    height: 225px;
+}
+
+.tarjetas button {
+    background-color: blueviolet;
+    padding: 10px;
+    font-size: 24px;
+    text-shadow: 1px  0px 0px black,
+                 0px  1px 0px black,
+                 -1px  0px 0px black,
+                 0px -1px 0px black;
+    font-weight: bold;
+}
+
+.tarjetas button:hover {
+    background: #94298f;
+    background: linear-gradient(90deg,rgba(148, 41, 143, 1) 0%, rgba(212, 92, 206, 1) 25%, rgba(250, 127, 244, 1) 50%, rgba(212, 92, 206, 1) 75%, rgba(148, 41, 143, 1) 100%);
+    cursor: pointer;
+    color: black;
+    text-shadow:1px  0px 0px white,
+                0px  1px 0px white,
+                -1px  0px 0px white,
+                0px -1px 0px white;
+}
+
+#productos h3 {
+    color: white;
+}
+
+#productos {
+    width: 100%;
+}
