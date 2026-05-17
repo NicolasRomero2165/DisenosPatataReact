@@ -1,0 +1,12 @@
+.carrito {
+    display: grid;
+    float: center;
+    border: solid white 2px;
+    text-align: start;
+}
+
+.carrito img {
+    height: 150px;
+    float: left;
+    position: relative;
+}

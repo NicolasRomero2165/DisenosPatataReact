@@ -1,12 +1,17 @@
 .tarjetas{
-    display: grid;
+    display: inline-grid;
     width: 30%;
-    float: left;
+    min-height: 65vh;
+    float: center;
     margin: 16px;
     background: #94298f;
     background: linear-gradient(90deg,rgba(148, 41, 143, 1) 0%, rgba(212, 92, 206, 1) 25%, rgba(250, 127, 244, 1) 50%, rgba(212, 92, 206, 1) 75%, rgba(148, 41, 143, 1) 100%);
     color: white;
     border: solid white 2px;
+}
+
+#detalle {
+    display: block;
 }
 
 .precio{
@@ -34,6 +39,13 @@
                  -1px  0px 0px black,
                  0px -1px 0px black;
     font-weight: bold;
+}
+
+.descripcion {
+    font-size: 12px;
+    color: white;
+    text-shadow: 1px 0px 0px black,
+                 0px 1px 0px black;
 }
 
 .tarjetas button:hover {
