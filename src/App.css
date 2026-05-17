@@ -17,6 +17,13 @@
   }
 }
 
+main {
+  background: #3F5EFB;
+  background-image: url('/img/estrelladoLila.jpg');
+  background-size: auto;
+}
+
+
 .hero {
   position: relative;
 

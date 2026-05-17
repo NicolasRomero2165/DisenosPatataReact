@@ -3,23 +3,21 @@
     width: 30%;
     float: left;
     margin: 16px;
-    background-color: blueviolet;
+    background: #94298f;
+    background: linear-gradient(90deg,rgba(148, 41, 143, 1) 0%, rgba(212, 92, 206, 1) 25%, rgba(250, 127, 244, 1) 50%, rgba(212, 92, 206, 1) 75%, rgba(148, 41, 143, 1) 100%);
     color: white;
     border: solid white 2px;
 }
 
-.tarjetas h3 {
-    text-shadow: 1px  0px 0px black,
-                 0px  1px 0px black,
-                 -1px  0px 0px black,
-                 0px -1px 0px black;
-}
-
-.tarjetas p{
+.precio{
     font-weight: bold;
     background-color: rgb(67, 20, 110);
     font-size: 24px;
     padding: 10px;
+    text-shadow: 1px  0px 0px black,
+                 0px  1px 0px black,
+                 -1px  0px 0px black,
+                 0px -1px 0px black;
 }
 
 .tarjetas img {
@@ -50,7 +48,12 @@
 }
 
 #productos h3 {
-    color: white;
+    color: black;
+    font-weight: bolder;
+    text-shadow: 1px  0px 0px white,
+                 0px  1px 0px white,
+                 -1px  0px 0px white,
+                 0px -1px 0px white;
 }
 
 #productos {
