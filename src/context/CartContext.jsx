@@ -11,11 +11,12 @@ export const useCart = () => {
 };
 
 export const CartProvider = ({ children }) => {
-        const [cart, setCart] = useState([]); const addToCart = (producto, cantidad) => {
-        const itemInCart = cart.find(item => item.id === producto.id);
-    if (itemInCart) {
-        const updatedCart = cart.map(item =>
-        item.id === producto.id? { ...item, quantity: item.quantity + cantidad } : item
+        const [cart, setCart] = useState([]); 
+        const addToCart = (producto, cantidad) => {
+            const itemInCart = cart.find(item => item.id === producto.id);
+        if (itemInCart) {
+            const updatedCart = cart.map(item =>
+            item.id === producto.id? { ...item, quantity: item.quantity + cantidad } : item
     );
         setCart(updatedCart);
     } else {

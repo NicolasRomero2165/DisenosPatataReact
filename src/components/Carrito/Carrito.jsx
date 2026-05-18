@@ -16,17 +16,27 @@ if (cart.length === 0) {
 
     return (
         <div>
-            <h3>Carrito de Compras</h3>
+            <h2>CARRITO DE COMPRAS</h2>
                 {cart.map(item => (
                 <div key={item.id} className="carrito">
-                    <h4>{item.nombre}</h4>
-                    <img src={item.imagen} alt={item.nombre}/>
-                    <p>Precio: ${item.precio}</p>
+                    <div className="carritoImagen">
+                        <img src={item.imagen} alt={item.nombre}/>
+                    </div>
+                    <div className="carritoTexto">
+                        <h4>{item.nombre}</h4>
+                        <p>{item.descripcion}</p>
+                    </div>
+                    <div className="carritoPrecio">
+                        <p>Precio</p>
+                        <p>${item.precio}</p>
+                    </div>
                 </div>
         ))}
         <hr />
-            <h3>Total a pagar: ${getCartTotal()}</h3>
-            <button onClick={clearCart}>Vaciar Carrito</button>
+            <button id="vaciarCarrito" onClick={clearCart}>VACIAR CARRITO</button>
+            <h3 id="total">
+                Total a pagar: ${getCartTotal()}
+            </h3>
         </div>
 );
 };

@@ -7,7 +7,7 @@ export const Nav = () => {
     const { getCartQuantity } = useCart();
     const totalItems = getCartQuantity();
 
-    const nav = ["Inicio", "Productos", "Contacto", `Carrito`];
+    const nav = ["Inicio", "Productos", "Contacto", "Carrito"];
 
     return (
         <nav>
@@ -15,6 +15,7 @@ export const Nav = () => {
                 {nav.map( (nombre, index) => 
                     <li key={index}><Link to={nombre}>{nombre}</Link></li>
                 )}
+                <span id='cantidadCarrito'>🛒 {totalItems}</span>
             </ul>
         </nav>
     );

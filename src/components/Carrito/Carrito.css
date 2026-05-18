@@ -1,12 +1,64 @@
 .carrito {
-    display: grid;
-    float: center;
+    display: flex;
+    float: left;
     border: solid white 2px;
     text-align: start;
+    height: 200px;
+    width: 100%;
+}
+
+.carritoImagen{
+    width: 30%;
+    overflow: hidden;
+    border: solid white 2px;
+}
+
+.carritoTexto{
+    width: 50%;
+    padding: 10px;
+    border: solid white 2px;
+}
+
+.carritoPrecio{
+    width: 20%;
+    text-align: center;
+    margin: auto;
 }
 
 .carrito img {
-    height: 150px;
-    float: left;
-    position: relative;
+    width: 100%;
+}
+
+#total {
+    display: flex;
+    float: right;
+    margin: 20px;
+}
+
+#vaciarCarrito{
+    margin: auto;
+    margin: 20px;
+}
+
+#vaciarCarrito button {
+    border-radius: 10px;
+    background-color: blueviolet;
+    padding: 10px;
+    font-size: 24px;
+    text-shadow: 1px  0px 0px black,
+                 0px  1px 0px black,
+                 -1px  0px 0px black,
+                 0px -1px 0px black;
+    font-weight: bold;
+}
+
+button:hover {
+    background: #94298f;
+    background: linear-gradient(90deg,rgba(148, 41, 143, 1) 0%, rgba(212, 92, 206, 1) 25%, rgba(250, 127, 244, 1) 50%, rgba(212, 92, 206, 1) 75%, rgba(148, 41, 143, 1) 100%);
+    cursor: pointer;
+    color: black;
+    text-shadow:1px  0px 0px white,
+                0px  1px 0px white,
+                -1px  0px 0px white,
+                0px -1px 0px white;
 }
