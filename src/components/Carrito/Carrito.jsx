@@ -23,7 +23,7 @@ if (cart.length === 0) {
                         <img src={item.imagen} alt={item.nombre}/>
                     </div>
                     <div className="carritoTexto">
-                        <h4>{item.nombre}</h4>
+                        <h3>{item.nombre}</h3>
                         <p>{item.descripcion}</p>
                     </div>
                     <div className="carritoPrecio">

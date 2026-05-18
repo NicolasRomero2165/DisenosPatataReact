@@ -37,5 +37,25 @@ a:hover {
                 0px  1px 0px white,
                 -1px  0px 0px white,
                 0px -1px 0px white;
-    margin: 20px 40px 20px 40px;
+    margin: 20px 40px 20px 0px;
 }
+
+@media (min-width: 722px) and (max-width: 1081px) {
+    nav a {
+        font-size: 20px;
+    }
+
+    #cantidadCarrito {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 721px) {
+    nav a {
+        font-size: 18px;
+    }
+
+    #cantidadCarrito {
+        font-size: 18px;
+    }
+  }

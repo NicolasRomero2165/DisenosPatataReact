@@ -3,7 +3,7 @@ import { useCart } from "../../context/CartContext";
 
 export const ItemDetail = ({item}) => {
 
-    const {id, nombre, imagen, precio, descripcion } = item;
+    const { nombre } = item;
 
     const { addToCart } = useCart(); 
 

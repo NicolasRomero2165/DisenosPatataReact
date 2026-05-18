@@ -1,28 +1,49 @@
 .carrito {
     display: flex;
     float: left;
-    border: solid white 2px;
+    border: solid white 1px;
     text-align: start;
     height: 200px;
     width: 100%;
+    background: #94298f;
+}
+
+.carrito h3{
+    text-align: center;
+    color: white;
+    text-shadow: 1px  0px 0px rgb(211, 11, 211),
+                 0px  1px 0px rgb(211, 11, 211),
+                 -1px  0px 0px rgb(211, 11, 211),
+                 0px -1px 0px rgb(211, 11, 211);
 }
 
 .carritoImagen{
     width: 30%;
     overflow: hidden;
-    border: solid white 2px;
+    border: solid blueviolet 1px;
 }
 
 .carritoTexto{
     width: 50%;
     padding: 10px;
-    border: solid white 2px;
+    background: transparent;
+    background-color: #16171d;
+    border: solid blueviolet 1px;
+    color: white;
+    text-shadow: 1px 0px 0px black,
+                 0px 1px 0px black;
 }
 
 .carritoPrecio{
     width: 20%;
-    text-align: center;
     margin: auto;
+    color: white;
+    font-weight: bolder;
+    text-align: center;
+    text-shadow: 1px  0px 0px black,
+                 0px  1px 0px black,
+                 -1px  0px 0px black,
+                 0px -1px 0px black;
 }
 
 .carrito img {
@@ -33,14 +54,19 @@
     display: flex;
     float: right;
     margin: 20px;
+    font-size: 24px;
+    color: rgb(211, 11, 211);
+    font-weight: bolder;
+    letter-spacing: 3px;
+    text-shadow:1px  0px 0px white,
+                0px  1px 0px white,
+                -1px  0px 0px white,
+                0px -1px 0px white;
 }
 
 #vaciarCarrito{
-    margin: auto;
-    margin: 20px;
-}
-
-#vaciarCarrito button {
+    margin: 10px;
+    font-size: 20px;
     border-radius: 10px;
     background-color: blueviolet;
     padding: 10px;
@@ -62,3 +88,44 @@ button:hover {
                 -1px  0px 0px white,
                 0px -1px 0px white;
 }
+
+@media (min-width: 722px) and (max-width: 1081px) {
+    .carrito {
+        height: auto;
+    }
+
+    #total {
+        display: flex;
+        float: center;
+        margin-right: 10%;
+    }
+
+    .carritoImagen {
+        width: 30%;
+        margin: auto;
+    }
+
+    .carritoTexto {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 721px) {
+    .carrito {
+        height: auto;
+    }
+
+    #total {
+        display: flex;
+        float: center;
+        margin-right: 10%;
+    }
+
+    .carritoImagen {
+        width: 0%;
+    }
+
+    .carritoTexto {
+        width: 70%;
+    }
+  }

@@ -10,10 +10,6 @@
     border: solid white 2px;
 }
 
-#detalle {
-    display: block;
-}
-
 .precio{
     font-weight: bold;
     background-color: rgb(67, 20, 110);
@@ -71,3 +67,31 @@
 #productos {
     width: 100%;
 }
+
+@media (min-width: 722px) and (max-width: 1081px) {
+    .tarjetas{
+        display: inline-grid;
+        width: 40%;
+        float: center;
+        min-height: 408px;
+        margin: 16px;
+        background: #94298f;
+        background: linear-gradient(90deg,rgba(148, 41, 143, 1) 0%, rgba(212, 92, 206, 1) 25%, rgba(250, 127, 244, 1) 50%, rgba(212, 92, 206, 1) 75%, rgba(148, 41, 143, 1) 100%);
+        color: white;
+        border: solid white 2px;
+    }
+}
+
+@media screen and (max-width: 721px) {
+    .tarjetas{
+        display: inline-grid;
+        width: 80%;
+        float: center;
+        min-height: 45vh;
+        margin: 16px;
+        background: #94298f;
+        background: linear-gradient(90deg,rgba(148, 41, 143, 1) 0%, rgba(212, 92, 206, 1) 25%, rgba(250, 127, 244, 1) 50%, rgba(212, 92, 206, 1) 75%, rgba(148, 41, 143, 1) 100%);
+        color: white;
+        border: solid white 2px;
+    }
+  }
